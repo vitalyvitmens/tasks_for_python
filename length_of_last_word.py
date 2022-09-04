@@ -17,7 +17,11 @@ a = 'Вставай, страна огромная, вставай на смер
 b = ' '
 c = '   p   y   t   h   o   n   '
 d = 'СССР'
+
 print(lengthOfLastWord(a))
 print(lengthOfLastWord(b))
 print(lengthOfLastWord(c))
 print(lengthOfLastWord(d))
+print(lengthOfLastWord(''))
+print(lengthOfLastWord('man in BlacK'))
+print(lengthOfLastWord('hello, world!  '))
