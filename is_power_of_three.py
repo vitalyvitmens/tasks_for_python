@@ -1,6 +1,6 @@
-def isPowerOfThree(a: int):
+def is_power_of_three(a: int):
     """
-    функция isPowerOfThree() которая определяет, является ли переданное число натуральной степенью тройки.
+    функция is_power_of_three() которая определяет, является ли переданное число натуральной степенью тройки.
     Например, число 27 – это третья степень (3**3), а 81 – четвёртая (3**4).
     """
     if not isinstance(a, int):
@@ -9,7 +9,7 @@ def isPowerOfThree(a: int):
         return print('True')
     elif a < 1 or a % 3 != 0:
         return print('False')
-    return isPowerOfThree(a // 3)
+    return is_power_of_three(a // 3)
 
 
-isPowerOfThree(243)
+is_power_of_three(243)

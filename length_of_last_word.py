@@ -1,6 +1,6 @@
-def lengthOfLastWord(string):
+def length_of_last_word(string):
     """
-    функция lengthOfLastWord, возвращает длину последнего слова переданной на вход строки.
+    функция length_of_last_word, возвращает длину последнего слова переданной на вход строки.
     Словом считается любая последовательность, не содержащая пробелов.
     Функция принимает на вход параметр (string) - строку в которой необходимо посчитать длину последнего слова.
     Если длина строки равна нулю (пустая строка) функция вернет ноль.
@@ -18,10 +18,10 @@ b = ' '
 c = '   p   y   t   h   o   n   '
 d = 'СССР'
 
-print(lengthOfLastWord(a))
-print(lengthOfLastWord(b))
-print(lengthOfLastWord(c))
-print(lengthOfLastWord(d))
-print(lengthOfLastWord(''))
-print(lengthOfLastWord('man in BlacK'))
-print(lengthOfLastWord('hello, world!  '))
+print(length_of_last_word(a))
+print(length_of_last_word(b))
+print(length_of_last_word(c))
+print(length_of_last_word(d))
+print(length_of_last_word(''))
+print(length_of_last_word('man in BlacK'))
+print(length_of_last_word('hello, world!  '))
