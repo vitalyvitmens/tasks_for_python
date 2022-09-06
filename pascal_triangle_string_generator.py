@@ -8,7 +8,7 @@ def pascal_triangle_string_generator(rows):
     start_num = [1]
     count = 0
     while rows > count:
-        count = count + 1
+        count += 1
         yield start_num
         start_num.append(0)
         start_num = [start_num[i - 1] + start_num[i] for i in range(len(start_num))]
