@@ -11,6 +11,8 @@ def summary_ranges(arr: list):
             continue
 
         if start_index == i:
+            # TODO: для вывода одиночных чисел не входящих в непрерывную возрастающую последовательность:
+            # result.append(str(arr[start_index]))
             pass
         else:
             result.append(f'{str(arr[start_index])} -> {str(arr[i])}')
