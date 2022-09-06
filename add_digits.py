@@ -1,25 +1,25 @@
 def add_digits(a: int):
     """
-    функция add_digits() принимает на вход неотрицательное целое число и
+    Функция add_digits() принимает на вход неотрицательное целое число и
     возвращает другое число, полученное из первого следующим преобразованием:
     Итеративно слаживает все входящие в него цифры до тех пор пока, не останется одна цифра.
     """
     if not isinstance(a, int):
-        return print('Число должно быть типа integer')
+        return 'Число должно быть типа integer'
     elif a > 0:
         if a < 10:
-            return print(a)
+            return a
         elif a >= 10:
             b = (a // 10) + (a % 10)
             while b > 9:
                 b = (b // 10) + (b % 10)
-            return print(b)
+            return b
     elif a == 0:
-        return print(0)
+        return 0
     elif a < 0:
-        return print('Вы ввели отрицательное число')
+        return 'Вы ввели отрицательное число'
     else:
-        return print('Введите число!')
+        return 'Введите число!'
 
 
-add_digits(226)
+print(add_digits(226))

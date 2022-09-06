@@ -1,6 +1,6 @@
 def compare_version(version1: str, version2: str):
     """
-    функция compare_version() сравнивает переданные версии version1 и version2.
+    Функция compare_version() сравнивает переданные версии version1 и version2.
     Если version1 > version2, то функция вернет 1, если version1 < version2, то функция вернет -1,
     если же version1 = version2, то функция вернет 0.
     Версия - это строка, в которой два числа (мажорная и минорные версии) разделены точкой,
@@ -20,20 +20,20 @@ def compare_version(version1: str, version2: str):
             else:
                 tmp1, tmp2 = int(version1[0]), int(version2[0])
                 if tmp1 > tmp2:
-                    return print(1)
+                    return 1
                 elif tmp1 < tmp2:
-                    return print(-1)
+                    return -1
                 else:
                     version1 = version1[1:]
                     version2 = version2[1:]
-        return print(0)
+        return 0
     except ValueError:
-        print('!!! Это не числа с точкой !!!')
+        '!!! Это не числа с точкой !!!'
 
 
-compare_version("0.1", "0.2")
+print(compare_version("0.1", "0.2"))
 # → -1
-compare_version("0.2", "0.1")
+print(compare_version("0.2", "0.1"))
 # → 1
-compare_version("4.2", "4.2")
+print(compare_version("4.2", "4.2"))
 # → 0
