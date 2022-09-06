@@ -16,4 +16,3 @@ def pascal_triangle_string_generator(rows):
 
 for n in pascal_triangle_string_generator(5):
     print(n)
-
