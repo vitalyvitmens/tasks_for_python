@@ -16,6 +16,8 @@ def fibonacci(n: int):
         raise ValueError("Fibonacci can't work with numbers larger than 100000.")
     if n == 0:
         return 0
+    if n == 1:
+        return 1
     assert n >= 0
     F = [0, 1] + [0] * n
     for i in range(2, n + 1):
@@ -24,6 +26,12 @@ def fibonacci(n: int):
     return F[n]
 
 
+print(fibonacci(0))
+# 0
+print(fibonacci(1))
+# 1
+print(fibonacci(2))
+# 1
 print(fibonacci(3))
 # 2
 print(fibonacci(5))
