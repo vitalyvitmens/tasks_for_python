@@ -1,4 +1,4 @@
-def summary_ranges(arr: list):
+def summary_ranges(array: list):
     """
     Функция summary_ranges() принимает на вход массив чисел, находит в нём непрерывные возрастающие
     последовательности чисел и возвращает массив строк с их перечислением.
@@ -6,8 +6,8 @@ def summary_ranges(arr: list):
     result = []
     start_index = 0
 
-    for i in range(len(arr)):
-        if i + 1 < len(arr) and arr[i] + 1 == arr[i + 1]:
+    for i in range(len(array)):
+        if i + 1 < len(array) and array[i] + 1 == array[i + 1]:
             continue
 
         if start_index == i:
@@ -15,7 +15,7 @@ def summary_ranges(arr: list):
             # result.append(str(arr[start_index]))
             pass
         else:
-            result.append(f'{str(arr[start_index])} -> {str(arr[i])}')
+            result.append(f'{str(array[start_index])} -> {str(array[i])}')
 
         start_index = i + 1
 
