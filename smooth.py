@@ -12,8 +12,8 @@ def smooth(x, dx):
     return inner
 
 
-def fn(sum):
-    return round(sin(rad2deg(sum)), 3)
+def fn(f):
+    return round(sin(rad2deg(f)), 3)
 
 
 smoothFunc = smooth([fn], 15)
