@@ -9,7 +9,8 @@ def fringe(array: list, direction: str = 'left'):
     if direction == 'left':
         return list(zip(*[iter(array)] * count))
     else:
-        return list(reversed(list(zip(*[iter(array)] * count))))
+        right = reversed(array)
+        return list(zip(*[iter(right)] * count))
 
 
 print(fringe([1, 2, 3, 4, 5, 6, 7, 8]))
